@@ -122,18 +122,20 @@
         </label>
 
           <label for="satisfaction">How satisfied were you?</label><br>
-          <input type="radio" id="s1" name="satisfaction" value="very" />
-          <label for="s1">Very Satisfied</label><br>
-          <input type="radio" id="s2" name="satisfaction" value="okay"/>
-          <label for="s2">Okay</label><br>
-          <input type="radio" id="s3" name="satisfaction" value="not"/>
-          <label for="s3">Not Satisfied</label><br>
+          <select id="satisfaction" name="satisfaction">
+            <option value="">Select an option</option>
+            <option value="very_satisfied">Very Satisfied</option>
+            <option value="satisfied">Satisfied</option>
+            <option value="neutral">Neutral</option>
+            <option value="unsatisfied">Unsatisfied</option>
+            <option value="very_unsatisfied">Very Unsatisfied</option>
+          </select>
 
           <label for="features">What features do you want?</label><br>
-          <input type="checkbox" id="music" name="features" value="music" >
+          <input type="checkbox" id="music" name="features" value="music">
           <label for="music">Music</label><br>
-          <input type="checkbox" id="annotated notes" name="features" value="annotated notes" >
-          <label for="annotated notes">Annotated Meeting Notes</label><br>
+          <input type="checkbox" id="annotated-notes" name="features" value="annotated notes">
+          <label for="annotated-notes">Annotated Meeting Notes</label><br>
 
           <label for="start-date">Project Start Date:</label>
           <input type="date" id="start-date" name="start-date" /><br>
