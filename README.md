@@ -1,3 +1,3 @@
 # Lab 2 - Starter
 
-[My Website!](https://amankdhillon.github.io/Lab2_Starter/)
+[Link to my website!](https://amankdhillon.github.io/Lab2_Starter/)
