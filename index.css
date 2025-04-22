@@ -1,6 +1,6 @@
 /* root vars for colors */
 :root {
-    --main-bg: rgb(255, 182, 193); /* main background color */
+    --main-bg: rgb(253, 205, 213); /* main background color */
     --text-dark: hsl(0, 0%, 52%); /* text color */
     --accent: color(display-p3 1 0.6 0.7); /* accent color */
 }
