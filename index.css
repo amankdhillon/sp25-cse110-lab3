@@ -71,7 +71,7 @@ header {
     background-color: lightgrey; 
     color: var(--text-dark); 
     border-style: dashed;
-    border-color: #aaa; 
+    border-color: var(--accent); 
     border-width: 1px;
     border-radius: 10px; 
     padding: 12px 18px;
