@@ -40,8 +40,9 @@ p, li {
 
 /* header styling */
 header {
+    text-align: center;
     position: sticky; /* header fixed on top while scrolling */
-    top: 10; /* stick to top */
+    top: 0; /* stick to top */
     border-style: solid; 
     border-color: #cccccc; 
     border-width: 2px; 
