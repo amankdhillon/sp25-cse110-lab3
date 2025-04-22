@@ -2,7 +2,6 @@
 :root {
     --main-bg: rgb(253, 205, 213); /* main background color */
     --text-dark: hsl(0, 0%, 52%); /* text color */
-    --accent: color(display-p3 1 0.6 0.7); /* accent color */
 }
 
 /* global margin adjustment */
@@ -72,7 +71,7 @@ header {
     background-color: lightgrey; 
     color: var(--text-dark); 
     border-style: dashed;
-    border-color: var(--accent); 
+    border-color: color(display-p3 1 0.6 0.7);
     border-width: 1px;
     border-radius: 10px; 
     padding: 12px 18px;
