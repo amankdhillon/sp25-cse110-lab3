@@ -24,9 +24,9 @@
 
 ### Member: [Name]
 - **Contributions Since Last Meeting:**
-  - [ ]
+  - insert
 - **Next Priorities:**
-  - [ ]
+  - insert 
 
 *Repeat for all members*
 
