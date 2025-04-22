@@ -1,5 +1,5 @@
 ---
-name: Checklist of specific features
+name: List of specific features
 about: For more tedious/ detailed requests
 title: ''
 labels: ''
