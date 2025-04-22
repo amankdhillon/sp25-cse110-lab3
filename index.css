@@ -104,7 +104,7 @@ a:hover {
 /* active button styling */
 button:active {
     opacity: 0; /* button becomes invisible on click */
-    visibility: hidden; /* hides the button while active */
+    visibility: hidden;
 }
 
 /* list item styling with square bullets */
@@ -122,7 +122,7 @@ h2 + p {
     font-style: italic;
 }
 
-/* section styling with an h2 element */
+/* section styling*/
 section:has(h2) {
     padding: 1rem; 
     border: 1px solid #c74366;
