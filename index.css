@@ -1,0 +1,201 @@
+/* root vars for colors */
+:root {
+    --main-bg: rgb(255, 182, 193); /* main background color */
+    --text-dark: hsl(0, 0%, 52%); /* text color */
+    --accent: color(display-p3 1 0.6 0.7); /* accent color */
+}
+
+/* global margin adjustment */
+* {
+    margin-bottom: 10px; 
+}
+
+/* body styling */
+body {
+    background-color: var(--main-bg, lightpink);
+    font-family: 'Bebas Neue', serif;
+    color: var(--text-dark);
+    margin-top: 2rem; 
+    margin-right: 1rem; 
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+/* heading styling with border */
+h1, h2, h3 {
+    border-bottom: 2px solid #c74366; 
+    padding: 0.5rem 1rem 0.75rem 1rem; 
+    margin: 1rem 2rem 1rem 2rem; 
+}
+
+/* link color styling */
+a {
+    color: var(--text-dark); 
+}
+
+/* paragraph and list item color */
+p, li {
+    color: var(--text-dark, darkgrey); 
+}
+
+/* header styling (sticky) */
+header {
+    position: sticky; /* header fixed on top while scrolling */
+    top: 0; /* stick to top */
+    text-align: center; 
+    background-color: var(--accent); 
+    border-style: solid; 
+    border-color: #cccccc; 
+    border-width: 2px; 
+    height: auto; /* height adjusts based on content */
+    z-index: 10; /* ensures header is above other content */
+    .nav {
+        display: flex;
+        justify-content: space-evenly; 
+        width: 100%; 
+        align-items: center;
+    }
+}
+
+
+
+/* agenda container using grid layout */
+.agenda-container {
+    display: grid; /* grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto); 
+    padding: 10px 20px; 
+}
+
+/* individual agenda item styling */
+.agenda-item {
+    background-color: lightgrey; 
+    color: var(--text-dark); 
+    border-style: dashed;
+    border-color: #aaa; 
+    border-width: 1px;
+    border-radius: 10px; 
+    padding: 12px 18px;
+    margin: 1rem; 
+    display: block;
+}
+
+/* text input border styling */
+input[type="text"] {
+    border: 2px solid pink;
+}
+
+/* form layout and styling */
+#form form {
+    background-color: lightgrey; 
+    padding: 2rem; 
+    margin: auto; 
+    border: 1px solid #aaa; 
+    border-radius: 1rem;
+    display: inline-block; 
+    position: relative; 
+}
+
+/* hover effect for links */
+a:hover {
+    color: #c74366; 
+    text-decoration: underline; 
+}
+
+/* active button styling */
+button:active {
+    opacity: 0; /* button becomes invisible on click */
+    visibility: hidden; /* hides the button while active */
+}
+
+/* list item styling with square bullets */
+ul > li {
+    list-style-type: square; 
+}
+
+/* style for p elements after h2 */
+h2 ~ p {
+    color: #c74366;
+}
+
+/* style for p elements immediately after h2 */
+h2 + p {
+    font-style: italic;
+}
+
+/* section styling with an h2 element */
+section:has(h2) {
+    padding: 1rem; 
+    border: 1px solid #c74366;
+}
+
+/* layout for small screes */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; 
+        padding: 1rem;
+    }
+
+    .agenda-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+    }
+
+    .agenda-item {
+        padding: 10px 15px; 
+        margin: 1rem;
+    }
+
+    #form form {
+        padding: 1.5rem;
+        max-width: 90%;
+    }
+}
+
+/* layout for edtra small screens */
+@media (max-width: 480px) {
+    body {
+        margin: 0.5rem;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2rem;
+        margin: 0.5rem 1rem;
+    }
+
+    .agenda-container {
+        grid-template-columns: 1fr; /* single column layout */
+    }
+
+    .agenda-item {
+        padding: 8px 12px; 
+        margin: 0.5rem 0;
+    }
+
+    #form form {
+        padding: 1rem;
+        max-width: 95%;
+    }
+}
+
+/* layout for larger screens */
+@media (min-width: 1024px) {
+    header {
+        flex-direction: row; 
+        padding: 1.5rem; 
+    }
+
+    .agenda-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .agenda-item {
+        padding: 15px 20px;
+        margin: 1rem;
+    }
+
+    #form form {
+        padding: 2rem;
+        max-width: 600px;
+    }
+}
