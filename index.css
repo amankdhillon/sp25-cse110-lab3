@@ -11,7 +11,7 @@
 
 /* body styling */
 body {
-    background-color: var(--main-bg, color-mix(in oklab, deeppink 65%, lightblue 35%));
+    background-color: var(--main-bg, lightpink);
     font-family: 'Bebas Neue', serif;
     color: var(--text-dark);
     margin-top: 2rem; 
