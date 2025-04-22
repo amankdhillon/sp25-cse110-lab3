@@ -38,12 +38,10 @@ p, li {
     color: var(--text-dark, darkgrey); 
 }
 
-/* header styling (sticky) */
+/* header styling */
 header {
     position: sticky; /* header fixed on top while scrolling */
     top: 0; /* stick to top */
-    text-align: center; 
-    background-color: var(--accent); 
     border-style: solid; 
     border-color: #cccccc; 
     border-width: 2px; 
